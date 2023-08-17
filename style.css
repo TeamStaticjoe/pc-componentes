@@ -59,9 +59,13 @@ h6 {
 .pc-compontes .product-grid {
   margin: 2em auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 1em;
        column-gap: 1em;
+}
+@media screen and (min-width: 768px) {
+  .pc-compontes .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .pc-compontes .product-grid header {
   grid-column: 1/4;
@@ -80,19 +84,36 @@ h6 {
 .pc-compontes .feature-icon-grid {
   margin: 2em auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   -moz-column-gap: 5em;
        column-gap: 5em;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pc-compontes .feature-icon-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.pc-compontes .feature-icon-grid .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pc-compontes .feature-icon-grid .feature .feature-icon {
+  width: 100px;
+  height: 100px;
 }
 .pc-compontes .cta-grid {
   margin: 2em auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content 1fr 1fr;
 }
 .pc-compontes .cta-grid header {
   grid-column: 1/3;
+  grid-row: 1/2;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
 }
 .pc-compontes .cta-grid .red {
   width: 100%;
