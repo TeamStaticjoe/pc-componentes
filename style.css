@@ -6,6 +6,7 @@
 
 * {
   margin: 0;
+  shape-rendering: geometricPrecision;
 }
 
 body {
@@ -117,31 +118,6 @@ h1,
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-}
-.pc-compontes .product-grid {
-  margin: 2em auto;
-  display: grid;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-}
-@media screen and (min-width: 768px) {
-  .pc-compontes .product-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.pc-compontes .product-grid header {
-  grid-column: 1/4;
-  grid-row: 1/2;
-  border-bottom: 1px solid #000;
-  margin-bottom: 1em;
-}
-.pc-compontes .product-grid .product {
-  border-right: 1px solid #000;
-  padding-right: 1em;
-}
-.pc-compontes .product-grid .product:last-child {
-  border-right: none;
-  padding-right: 0;
 }
 .pc-compontes .feature-icon-grid {
   margin: 2em auto;

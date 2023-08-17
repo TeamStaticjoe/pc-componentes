@@ -7,6 +7,7 @@
 
 * {
 	margin: 0;
+	shape-rendering: geometricPrecision;
 }
 
 body {
@@ -123,29 +124,6 @@ h1,
 		.hero-image {
 			object-fit: cover;
 			height: 100%;
-		}
-	}
-
-	.product-grid {
-		margin: 2em auto;
-		display: grid;
-		@media screen and (min-width: 768px) {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-		column-gap: 1em;
-		header {
-			grid-column: 1/4;
-			grid-row: 1/2;
-			border-bottom: 1px solid #000;
-			margin-bottom: 1em;
-		}
-		.product {
-			border-right: 1px solid #000;
-			padding-right: 1em;
-			&:last-child {
-				border-right: none;
-				padding-right: 0;
-			}
 		}
 	}
 
