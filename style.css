@@ -6,7 +6,6 @@
 
 * {
   margin: 0;
-  shape-rendering: geometricPrecision;
 }
 
 body {
@@ -155,15 +154,14 @@ h1,
 }
 .pc-compontes .cta-grid .red {
   width: 100%;
-  height: 300px;
-  background-color: red;
+  height: 100%;
 }
 .pc-compontes .cta-grid .cta {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  height: 300px;
 }
 .pc-compontes .cta-grid .cta .content-lockup {
   width: 50%;
