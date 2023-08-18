@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>HTML 5 Boilerplate</title>
+		<title>PC Componetes</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="pc-compontes">
+	<body class="pc-componetes">
 		<section class="hero">
-			<div class="hero-content content">
+			<div class="hero-content container">
 				<div class="hero-lockup">
 					<img
 						class="logo"
@@ -21,17 +27,27 @@
 			<img class="hero-image" src="assets/images/pcc-hero1800.jpg" />
 		</section>
 
-		<section class="feature-icon-grid content">
+		<section class="header-content container">
+			<p class="roboto align-center">
+				La ilusión de poder conectarte, crear y comunicarte bajo tus reglas. Con
+				una duración de la batería inigualable, 5G de última generación,
+				experiencias inteligentes y un máximo rendimiento, los portátiles
+				equipados con procesadores Snapdragon® permiten esa libertad para
+				conectarse a cualquier hora y desde cualquier lugar.
+			</p>
+		</section>
+
+		<section class="feature-icon-grid container">
 			<div class="feature">
 				<img
 					class="feature-icon"
 					src="assets/images/pcc-SD_Icon_Battery_Red.svg"
 					alt=""
 				/>
-				<h4>Empowered for longer</h4>
-				<p>
-					Donec sodales sagittis magna. Class aptent taciti sociosqu ad litora
-					torquent per conubia nostra, per inceptos hymenaeos.
+				<h4>POTENCIA PROLONGADA</h4>
+				<p class="qc-regular">
+					Duración de la batería diseñada para las grandes ideas. Consigue más
+					objetivos con los portátiles equipados con procesadores Snapdragon®.
 				</p>
 			</div>
 
@@ -41,10 +57,10 @@
 					src="assets/images/pcc-SD_Icon_5G_Red.svg"
 					alt=""
 				/>
-				<h4>Zero to 5G thrill</h4>
-				<p>
-					Donec sodales sagittis magna. Class aptent taciti sociosqu ad litora
-					torquent per conubia nostra, per inceptos hymenaeos.
+				<h4>LA EMOCIÓN DE ZERO A 5G</h4>
+				<p class="qc-regular">
+					La libertad del 5G. Sigue tu pasión con los portátiles equipados con
+					procesadores Snapdragon®.
 				</p>
 			</div>
 
@@ -54,10 +70,10 @@
 					src="assets/images/pcc-SD_Icon_Artificial_Intelligence_Red.svg"
 					alt=""
 				/>
-				<h4>Wow-Worthy intelligence</h4>
-				<p>
-					Donec sodales sagittis magna. Class aptent taciti sociosqu ad litora
-					torquent per conubia nostra, per inceptos hymenaeos.
+				<h4>INTELIGENCIA DE QUEDARSE PASMADO</h4>
+				<p class="qc-regular">
+					Máxima genialidad. Disfruta de experiencias inteligentes de último
+					nivel con los portátiles equipados con procesadores Snapdragon®.
 				</p>
 			</div>
 
@@ -67,43 +83,58 @@
 					src="assets/images/pcc-SD_Icon_Speed_Red.svg"
 					alt=""
 				/>
-				<h4>"Oh-Yeah" efficient</h4>
-				<p>
-					Donec sodales sagittis magna. Class aptent taciti sociosqu ad litora
-					torquent per conubia nostra, per inceptos hymenaeos.
+				<h4>UNA MAGNÍFICA EFICIENCIA</h4>
+				<p class="qc-regular">
+					Realiza múltiples tareas a la máxima velocidad. Disfruta de un
+					rendimiento ultrarrápido con los portátiles equipados con procesadores
+					Snapdragon®.
 				</p>
 			</div>
 		</section>
-		<section class="cta-grid content">
+		<section class="cta-grid container">
 			<header>
-				<h3>Shop Laptops Powered by Snapdragon proessors</h3>
+				<h2 class="h3 roboto">
+					Comprar portátiles equipados con procesadores Snapdragon.
+				</h2>
 			</header>
-			<div class="red">
+
+			<div class="red" id="grid-item-1">
 				<img src="assets/images/pcc-red1.svg" />
 			</div>
-			<div class="cta">
-				<div class="content-lockup">
-					<p>Astonishing is the new status quo</p>
-					<p>
-						Work and play to the max-from virtually anywhere-with premium
-						performance laptops powered by Snapdragon 8-series.
+
+			<div class="cta" id="grid-item-2">
+				<div class="content-lockup align-center">
+					<h3>QUEDARSE ALUCINADO SERÁ LA NUEVA NORMALIDAD</h3>
+					<p class="qc-regular">
+						Trabaja y juega a lo grande, desde prácticamente cualquier lugar,
+						con portátiles de alto rendimiento equipados con procesadores
+						Snapdragon® 8-Series.
 					</p>
-					<a href="#" class="btn">Shop Now</a>
+					<a href="#" class="btn">Comprar</a>
 				</div>
 			</div>
-			<div class="cta">
-				<div class="content-lockup">
-					<p>Expectations upgraded</p>
-					<p>
-						Defy expectations. Make the everyday extraordinary with laptops
-						powered by Snapdragon 7-series.
-					</p>
-					<a href="#" class="btn">Shop Now</a>
-				</div>
-			</div>
-			<div class="red">
+
+			<div class="red" id="grid-item-3">
 				<img src="assets/images/pcc-red2.svg" />
 			</div>
+
+			<div class="cta" id="grid-item-4">
+				<div class="content-lockup align-center">
+					<h3>EXPECTATIVAS AUMENTADAS</h3>
+					<p class="qc-regular">
+						Supera todas las expectativas. Convierte lo cotidiano en
+						extraordinario con los portátiles equipados con procesadores
+						Snapdragon® 7-Series.
+					</p>
+					<a href="#" class="btn">Comprar</a>
+				</div>
+			</div>
 		</section>
+		<footer class="site-footer container">
+			<span class="trademark"
+				>Snapdragon es un producto de Qualcomm Technologies, Inc. y/o sus
+				filiales.</span
+			>
+		</footer>
 	</body>
 </html>
