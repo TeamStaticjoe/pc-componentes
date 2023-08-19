@@ -84,7 +84,7 @@ h4,
 }
 
 .roboto {
-	font-family: "Roboto", sans-serif;
+	font-family: "robotoregular", sans-serif;
 	font-size: 17px;
 }
 
@@ -129,6 +129,13 @@ h4,
 	font-family: "qualcomm_nextregular";
 	src: url("assets/fonts/qualcommnext-regular-webfont.woff2") format("woff2"),
 		url("assets/fonts/qualcommnext-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "robotoregular";
+	src: url("assets/fonts/Roboto-Regular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
