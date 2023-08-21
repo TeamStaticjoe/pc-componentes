@@ -95,8 +95,21 @@ h4,
   font-size: 17px;
 }
 
+.roboto {
+  font-family: "robotoregular", sans-serif;
+  font-size: 17px;
+}
+
 .qc-regular {
   font-family: "qualcomm_nextregular";
+}
+
+.blue {
+  color: #3004a5;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .align-center {
@@ -138,6 +151,12 @@ h4,
 @font-face {
   font-family: "robotoregular";
   src: url("assets/fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoblack";
+  src: url("assets/fonts/Roboto-Black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -294,6 +313,62 @@ h4,
     grid-column: 1/2;
     grid-row: 3/4;
   }
+}
+.pc-componetes .product-grid {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .pc-componetes .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.pc-componetes .product-grid header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .pc-componetes .product-grid header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+}
+.pc-componetes .product-grid .product {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+  border-right: none;
+  padding-right: 0;
+  margin-bottom: 2em;
+  font-family: "robotoregular";
+}
+@media screen and (min-width: 1024px) {
+  .pc-componetes .product-grid .product {
+    border-right: 1px solid #000;
+    padding-right: 1em;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.pc-componetes .product-grid .product:last-child {
+  border-right: none;
+  padding-right: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.pc-componetes .product-grid .product .product-price {
+  font-family: "robotoblack";
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+.pc-componetes .product-grid .product .stars {
+  display: flex;
+  margin: 0.5em 0;
+}
+.pc-componetes .product-grid .product .stars .star {
+  width: 1em;
+  height: 1em;
 }
 .pc-componetes .site-footer .trademark {
   padding: 1em 0;
